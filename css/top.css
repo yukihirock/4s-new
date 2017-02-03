@@ -1,0 +1,190 @@
+/* CSS Document */
+
+
+/* contents */
+
+.item {
+	width: 250px;
+	height: auto;
+	overflow:hidden;
+}
+
+.item p {
+	padding: 5px 10px 0;
+}
+
+.item figure img {
+	width: 100%;
+	padding: 0;
+	margin: 0;
+}
+
+.item a {
+	-webkit-transition: all 0.3s ease;
+	-moz-transition: all 0.3s ease;
+	-o-transition: all 0.3s ease;
+	transition: all  0.3s ease;
+	display:block;
+	height:100%;
+}
+
+.item a:hover {
+	opacity: .6;
+	-webkit-opacity: .6;
+	-moz-opacity: .6;
+	filter: alpha(opacity=60);
+	-ms-filter: "alpha(opacity=60)";
+}
+
+
+.col3 {
+	width: 870px;
+	height: auto;
+}
+.col2 {
+	width: 560px;
+	height: auto;
+}
+
+
+/* footer */
+
+#footer{
+background-color:#fff;
+}
+
+#category{
+}
+
+#footMenu{
+margin-top:16px;
+}
+#category li.selected{
+border-top:1px solid #424E69;
+}
+
+
+
+@media screen and (max-width: 1415px){
+
+
+}
+
+
+@media screen and (max-width: 1179px){
+
+
+
+}
+
+
+
+@media screen and (max-width: 850px){
+
+.col3 {
+	width: 560px;
+}
+
+}
+
+
+
+@media screen and (max-width: 707px){
+
+
+nav dd{
+clear:both;
+}
+nav dd li{
+width:300px;
+margin-right:0;
+}
+nav li.selected{
+border:0;
+}
+nav li,#naviFoot li{
+clear:both;
+height:30px;
+margin-bottom:5px;
+text-indent:5px;
+line-height:30px;
+background-color:#fff;
+}
+nav li a,#naviFoot li a{
+display:block;
+}
+nav li img,#naviFoot li img{
+float:right;
+}
+
+
+.item {
+	margin: 20px 10px 0 10px;
+	width: 180px;
+	height: auto;
+}
+
+.item p {
+	font-size: 1.0rem;
+	padding-left: 0;
+	padding-right: 0;
+}
+
+
+.item dd{/* chromeの10px以下文字表示対策 */
+	width:167%;
+	font-size:10px;
+	line-height:20px;
+	-webkit-transform: scale(0.7);
+	-webkit-transform-origin: 0% 0%;
+	-ms-transform: scale(0.7);
+	-ms-transform-origin: 0% 0%;
+	transform: scale(0.7);
+	transform-origin: 0% 0%;
+	zoom: 0.7;
+}
+
+
+
+
+#footer{
+padding-top:10px;
+background-color:#f6f6f6;
+}
+
+#naviFoot{
+padding-top:0;
+}
+
+#category{
+float:right;
+width:99px;
+height:210px;
+}
+#category li{
+width:99px;
+border:0;
+background-color:#fbfbfb;
+}
+#category li.selected{
+border:0;
+}
+
+#footMenu{
+float:left;
+margin-top:0;
+width:195px;
+height:210px;
+}
+#footMenu li{
+width:195px;
+background-color:#fff;
+}
+
+
+#logoFoot{
+margin-top:70px;
+}
+
+
+}

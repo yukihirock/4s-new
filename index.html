@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="ja">
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<meta name="robots" content="all">
+	<meta name="description" content="">
+	<meta http-equiv="imagetoolbar" content="no">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" media="all" href="css/common.css">
+	<link rel="stylesheet" type="text/css" media="all" href="css/top.css">
+	<!--[if lt IE 9]>
+	<script src="http://ie7-js.googlecode.com/svn/version/2.1(beta4)/IE9.js"></script>
+	<script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script>
+	<![endif]-->
+
+<script type="text/javascript" src="js/jquery-1.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/jquery.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/gistfile1.js" charset="UTF-8"></script>
+<script type="text/javascript" src="js/common.js" charset="UTF-8"></script>
+<script type="text/javascript">
+function itemSet(){
+var winwidth = $(window).width();
+if(winwidth<=707){
+	$('#contents').masonry({
+	itemSelector: 'div.item',
+	columnWidth: 200,
+	maxWidth: 600,
+	isAnimated: true,
+	isFitWidth: true,
+	animationOptions: {
+		duration: 180,
+		easing: 'easeOutCubic',
+		queue: false
+		}
+	});
+}else{
+	$('#contents').masonry({
+	itemSelector: 'div.item',
+	columnWidth: 310,
+	maxWidth:1920,
+	isAnimated: true,
+	isFitWidth: true,
+	animationOptions: {
+		duration: 180,
+		easing: 'easeOutCubic',
+		queue: false
+		}
+	});
+}
+}
+
+function footPos(){
+var winwidth = $(window).width();
+var footHeight = $("#footer").height(); //footerの高さ取得
+if( 707<winwidth ){
+	$("#contents").css("padding-bottom", footHeight+35); //直前のブロックのpaddingに代入
+}else{
+	$("#contents").css("padding-bottom", footHeight+20); //直前のブロックのpaddingに代入
+}
+}
+
+
+$(document).ready(function(){
+	footPos();
+	itemSet();
+});
+
+$(window).bind('load resize',function(){
+	footPos();
+	itemSet();
+});
+</script>
+
+</head>
+
+<body>
+
+<!-- container -->
+<div id="container" class="jp">
+<div id="loader-bg">
+  <div id="loader">
+    <img src="img/loader.gif" width="64" height="64" alt="Now Loading..." />
+  </div>
+</div>
+<!-- header -->
+<header>
+	<nav>
+		<h1><img src="img/logo.png" alt="4s design" /></h1>
+		<ul class="en">
+			<li><a href="">works</a></li>
+			<li><a href="">blog</a></li>
+			<li><a href="">about</a></li>
+		</ul>
+	</nav>
+</header>
+<!-- end of header -->
+
+
+<!-- contents -->
+<div id="contents">
+	<div class="item col2">
+		<a href="">
+			<figure><img src="img/sample1.jpg" /></figure>
+			<p>長島有里枝 写真展「坂、階段そして海」/DM</p>
+		</a>
+	</div>
+
+	<div class="item">
+		<a href="">
+			<figure><img src="img/sample2.jpg" /></figure>
+			<p>ちびっこうべ2016に参加</p>
+		</a>
+	</div>
+
+	<div class="item col3">
+		<a href="">
+			<figure><img src="img/sample3.jpg" /></figure>
+			<p>しおさい2016/パンフレット</p>
+		</a>
+	</div>
+
+	<div class="item">
+		<a href="">
+			<figure><img src="img/sample4.jpg" /></figure>
+			<p>しおさい2016 11/26（日）<br>「しおや歩き回り音楽会」</p>
+		</a>
+	</div>
+
+	<div class="item">
+		<a href="">
+			<figure><img src="img/sample5.jpg" /></figure>
+			<p>しおさい2016開催</p>
+		</a>
+	</div>
+
+	<div class="item">
+		<a href="">
+			<figure><img src="img/sample6.jpg" /></figure>
+			<p>橋本工務店/ロゴ</p>
+		</a>
+	</div>
+
+	<div class="item col2">
+		<a href="">
+			<figure><img src="img/sample7.jpg" /></figure>
+			<p>岩座神だより/案内冊子</p>
+		</a>
+	</div>
+
+	<div class="item col2">
+		<a href="">
+			<figure><img src="img/sample2.jpg" /></figure>
+			<p>塩屋本2015/案内冊子</p>
+		</a>
+	</div>
+
+	<div class="item">
+		<a href="">
+			<figure><img src="img/sample1.jpg" /></figure>
+			<p>飯川雄大 インスタレーション<br>「デコレータークラブ」/DM</p>
+		</a>
+	</div>
+	
+	<div class="item">
+		<a href="">
+			<figure><img src="img/sample3.jpg" /></figure>
+			<p>しおさい2016開催</p>
+		</a>
+	</div>
+	
+	<div class="item">
+		<a href="">
+			<figure><img src="img/sample4.jpg" /></figure>
+			<p>飯川雄大 インスタレーション<br>「デコレータークラブ」/DM</p>
+		</a>
+	</div>
+
+	<div class="item col2">
+		<a href="">
+			<figure><img src="img/sample7.jpg" /></figure>
+			<p>塩屋本2015/案内冊子</p>
+		</a>
+	</div>
+	
+	<div class="item col">
+		<a href="">
+			<figure><img src="img/sample3.jpg" /></figure>
+			<p>塩屋本2015/案内冊子</p>
+		</a>
+	</div>
+	
+</div>
+<!-- end of contents -->
+
+
+<!-- footer -->
+<div id="footer">
+
+
+
+</div>
+<!-- end of footer -->
+
+
+
+
+</div>
+<!-- end of container -->
+<script src="https://use.typekit.net/wzj4mix.js"></script>
+<script>try{Typekit.load({ async: true });}catch(e){}</script>
+
+
+
+
+
+</body>
+</html>
